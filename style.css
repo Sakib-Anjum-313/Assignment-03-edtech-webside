@@ -1,0 +1,25 @@
+.carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.top-banner-info {
+  position: absolute;
+  left: 22%;
+  top: 40px;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 688px) {
+  .top-banner-info {
+    position: absolute;
+    left: 22%;
+    top: 15px;
+    z-index: 10;
+  }
+}
