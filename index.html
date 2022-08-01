@@ -4,23 +4,40 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Assignment-03-Edtech Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <!-- bootstrap 3 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS  -->
+
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Head End  -->
   </head>
-  <body>
-    <header class="container">
+  <body style="font-family: Nunito, sans-serif">
+    <header class="container border border-5">
       <!-------------------
         NavBar Start Here=====> 
       ------------------------->
-
       <nav
-        style="height: 100px; z-index: 30"
-        class="navbar my-5 navbar-expand-lg navbar-dark bg-primary"
+        style="height: 70px; z-index: 30"
+        class="navbar my-4 navbar-expand-lg navbar-dark bg-primary"
       >
         <div class="container">
           <a class="navbar-brand" href="#">Pro Edu</a>
@@ -65,8 +82,9 @@
         </div>
       </nav>
 
-      <!-- slide start here  -->
-
+      <!-----------------
+         slide start here
+        ----------------->
       <section>
         <div
           id="carouselExampleControls"
@@ -74,29 +92,26 @@
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            <!-- Top Banner info  -->
+            <!------------
+              Top Banner info  
+            ------------->
+
             <div class="container w-50 top-banner-info">
               <div class="w-75 m-0 p-0">
-                <h1
-                  style="font-weight: 700; color: white; font-size: 3vw"
-                  class="mb-1"
-                >
+                <h1 style="font-size: 3vw" class="mb-1 text-white fw-bold">
                   Get Started Digital
                 </h1>
-                <h1
-                  style="font-weight: 700; color: white; font-size: 3vw"
-                  class="mt-0"
-                >
+                <h1 style="font-size: 3vw" class="mt-0 text-white fw-bold">
                   Learning
                 </h1>
               </div>
-              <p style="color: white; font-size: 1.2vw" class="mb-1">
+              <p style="font-size: 1.2vw" class="text-white mb-1">
                 Personalized, fun, and interactive learning process. Enjoy our
                 gamified courses to master python, cyber security, C
                 programming, C++, and many more.
               </p>
               <button
-                style="font-size: 2vw"
+                style="font-size: 1.5vw"
                 class="btn btn-info text-white mt-2"
               >
                 Get Started
@@ -146,11 +161,223 @@
       </section>
     </header>
 
-    <section></section>
+    <!----------------
+  Discover Banner  
+  ----------------->
+
+    <section class="mt-4 container">
+      <header class="container">
+        <div>
+          <h1 style="font-size: 3vw" class="fw-bold text-center mt-4 pt-4 mb-1">
+            Discover Our Popular
+          </h1>
+        </div>
+        <div>
+          <p style="font-size: 2vw" class="container w-75 mt-2">
+            Come and enjoy unlimited coding support, daily concept clear
+            sessions, real-world projects, job placement service, and many more.
+            And 70% of our successful students get hired internationally.
+          </p>
+        </div>
+      </header>
+
+      <!---------------
+         Discover Grid Section
+        -------------------->
+      <section class="container mt-4 pt-4">
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4">
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row row-cols-md-2 row-cols-1 g-0">
+                <div class="col-12 col-lg-4 col-md-4">
+                  <img
+                    src="images/course/course-1.png"
+                    class="h-100 img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-12 col-lg-8 col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                      Fundamental Of UI/UX Design
+                    </h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <strong class="fw-bold text-info">Price: 20$</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/course/course-2.png"
+                    class="h-100 img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                      Javascript Basic to advanced
+                    </h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <strong class="fw-bold text-info">Price: 20$</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/course/course-3.png"
+                    class="h-100 img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                      Fullstack Web Development
+                    </h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <strong class="fw-bold text-info">Price: 20$</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/course/course-4.png"
+                    class="h-100 img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Digital Marketing</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <strong class="fw-bold text-info">Price: 20$</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/course/course-5.png"
+                    class="h-100 w-100 rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Photography Basic Rules</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <strong class="fw-bold text-info">Price: 20$</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/course/course-6.png"
+                    class="h-100 img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Motion Graphics</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <strong class="fw-bold text-info">Price: 20$</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------
+        See More Button Section 
+      --------------- --------->
+      <footer class="container mt-3 pt-3">
+        <div class="d-flex justify-content-center">
+          <div>
+            <button type="button" class="btn btn-info">
+              <span class="hidden-sm hidden-xs hidden-md"
+                >See More Courses</span
+              >
+              <span class="hidden-lg">View All</span>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
   </body>
